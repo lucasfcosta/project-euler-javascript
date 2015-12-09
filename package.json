@@ -1,0 +1,34 @@
+{
+  "name": "project-euler-javascript",
+  "version": "1.0.0",
+  "description": "Code I've written to solve Project Euler's challenges.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test",
+    "lint": "gulp lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasfcosta/project-euler-javascript.git"
+  },
+  "keywords": [
+    "project",
+    "euler",
+    "javascript",
+    "code",
+    "challenge",
+    "solutions"
+  ],
+  "author": "Lucas Fernandes da Costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucasfcosta/project-euler-javascript/issues"
+  },
+  "homepage": "https://github.com/lucasfcosta/project-euler-javascript#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-jscs": "^3.0.2"
+  }
+}
