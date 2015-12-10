@@ -1,4 +1,4 @@
-# [Project Euler](https://projecteuler.net/) (JavaScript)
+# [Project Euler](https://projecteuler.net/) (JavaScript) [![Build Status](https://travis-ci.org/lucasfcosta/project-euler-javascript.svg?branch=master)](https://travis-ci.org/lucasfcosta/project-euler-javascript)
 
 **This platform has got everything you need to start solving [Project Euler](https://projecteuler.net/)'s challenges right away.**
 
