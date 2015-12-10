@@ -3,7 +3,13 @@
 let gulp = require('gulp');
 let jscs = require('gulp-jscs');
 let eslint = require('gulp-eslint');
+let mocha = require('gulp-mocha');
 let excludeGitignore = require('gulp-exclude-gitignore');
+
+gulp.task('mocha', () => {
+    return gulp.src('test/*.js')
+        .pipe(mocha({reporter: 'spec', timeout: '60000'}));
+});
 
 gulp.task('jscs', () => {
     return gulp.src('**/*.js')
@@ -20,5 +26,6 @@ gulp.task('eslint', () => {
         .pipe(eslint.failAfterError());
 });
 
-gulp.task('default', ['jscs', 'eslint']);
+gulp.task('default', ['mocha', 'jscs', 'eslint']);
+gulp.task('test', ['mocha', 'jscs', 'eslint']);
 gulp.task('lint', ['jscs', 'eslint']);
