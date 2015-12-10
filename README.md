@@ -2,7 +2,7 @@
 
 **This platform has got everything you need to start solving [Project Euler](https://projecteuler.net/)'s challenges right away.**
 
-You can use this to compare your solutions and take a look at mine's and **you can also use this project as a boilerplate**.
+You can use this to compare your solutions to mine's and **you can also use this project as a boilerplate**.
 
 If you want to read problems offline you can take a look at problems.txt, which is a courtesy of another awesome project called [EulerPy](https://github.com/iKevinY/EulerPy).
 
@@ -21,7 +21,7 @@ Please read the instructions below so you can get to know how everything works.
     ```
 2. Run `npm install` to install project's dependencies
 3. If you want to use this as a boilerplate or a test platform you can delete every single file inside the `solutions` folder
-
+4. To run gulp tasks you will also need to install [Gulp](https://www.npmjs.com/package/gulp) globally using `npm install -g gulp`
 
 ### Writing Solutions
 
