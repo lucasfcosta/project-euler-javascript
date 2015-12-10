@@ -37,3 +37,8 @@ I think it's very simple but **if you still need an example please take a look a
 ### Testing Solutions
 
 If you don't want to lint your code and check for code-style related issues you can run `gulp mocha`, otherwise just run `gulp test`.
+
+
+### TL;DR
+
+Clone this, install gulp globally (`npm install -g gulp`) and run `gulp mocha` to check the solutions (name them with them problem's number) inside the solutions folder.
