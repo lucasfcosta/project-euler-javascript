@@ -39,6 +39,13 @@ I think it's very simple but **if you still need an example please take a look a
 If you don't want to lint your code and check for code-style related issues you can run `gulp mocha`, otherwise just run `gulp test`.
 
 
+### Other Configurations
+
+You can also **configure the linting rules** using the files [`.jsrsc`](http://jscs.info/rules?q=) and [`.eslintrc`](http://eslint.org/docs/rules/).
+
+Currently I'm also using a timeout of 60000ms for tests (because that's what Euler Project recommends) but you can change that on the `gulpfile.js` file. Just change 60000 to whatever you want.
+
+
 ### TL;DR
 
 Clone this, install gulp globally (`npm install -g gulp`) and run `gulp mocha` to check the solutions (name them with them problem's number) inside the solutions folder.
