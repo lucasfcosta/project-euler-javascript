@@ -13,4 +13,5 @@ for (let i = 1; i < 1000; i++) {
 	}
 }
 
+// After solving the problem don't forget to assign the result to module.exports, like this:
 module.exports = sum;
