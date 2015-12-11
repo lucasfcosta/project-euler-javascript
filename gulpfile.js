@@ -19,7 +19,7 @@ gulp.task('jscs', () => {
 });
 
 gulp.task('eslint', () => {
-    gulp.src('**/*.js')
+    return gulp.src('**/*.js')
         .pipe(excludeGitignore())
         .pipe(eslint())
         .pipe(eslint.formatEach('compact', process.stderr))
