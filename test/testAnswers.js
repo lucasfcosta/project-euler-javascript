@@ -9,9 +9,13 @@ let files = fs.readdirSync(__dirname + '/../solutions');
 
 for (let i = 1; i <= files.length; i++) {
     describe('Problem ' + i, () => {
+        let startTime = new Date();
         let answer = require('../solutions/' + ('00' + i).slice(-3));
-        
-        it('Your answer: ' + answer, () => {
+        let endTime = new Date();
+
+        let elapsedTime = endTime - startTime;
+
+        it(`Your answer: ${answer} (${elapsedTime}ms)`, () => {
             let correctAnswer = answers['problem' + i];
 
             assert.strictEqual(answer, correctAnswer);
