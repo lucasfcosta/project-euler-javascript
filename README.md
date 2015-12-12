@@ -38,6 +38,7 @@ I think it's very simple but **if you still need an example please take a look a
 
 If you don't want to lint your code and check for code-style related issues you can run `gulp mocha`, otherwise just run `gulp test`.
 
+To check the last solution only you should run `gulp testLast`.
 
 ### Other Configurations
 
