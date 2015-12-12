@@ -11,6 +11,11 @@ gulp.task('mocha', () => {
         .pipe(mocha({reporter: 'spec', timeout: '60000'}));
 });
 
+gulp.task('mochaLast', () => {
+    return gulp.src('test/testLastAnswer.js')
+        .pipe(mocha({reporter: 'spec', timeout: '60000'}));
+});
+
 gulp.task('jscs', () => {
     return gulp.src('**/*.js')
         .pipe(excludeGitignore())
@@ -28,4 +33,5 @@ gulp.task('eslint', () => {
 
 gulp.task('default', ['mocha', 'jscs', 'eslint']);
 gulp.task('test', ['mocha', 'jscs', 'eslint']);
+gulp.task('testLast', ['mochaLast']);
 gulp.task('lint', ['jscs', 'eslint']);
