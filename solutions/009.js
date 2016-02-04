@@ -7,7 +7,7 @@ function calculateResult() {
         for (let b = a; b < 1000 - a; b++) {
             let c = 1000 - a - b;
 
-            if ((Math.pow(a, 2) + Math.pow(b, 2)) === Math.pow(c, 2)) {
+            if (Math.pow(a, 2) + Math.pow(b, 2) === Math.pow(c, 2)) {
                 return a * b * c;
             }
         }

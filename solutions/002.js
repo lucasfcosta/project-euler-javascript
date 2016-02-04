@@ -8,7 +8,7 @@ function nextFib(n1, n2) {
     if (n1 % 2 === 0) {
         sum += n1;
     }
-    
+
     if (n1 <= 4000000) {
         nextFib(n2, n1+n2);
     }
