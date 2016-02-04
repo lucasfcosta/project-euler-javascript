@@ -1,18 +1,33 @@
 {
-	"extends": "eslint:recommended",
-    "ecmaFeatures": {	
-    	"modules": true,
-    },
+    "extends": "eslint:recommended",
     "env": {
-    	"node": true,
-    	"mocha": true,
-    	"es6": true
+        "mocha": true,
+        "es6": true,
+        "node": true
     },
     "rules": {
-        "semi": 2,
+        "no-extra-parens": 1,
+        "no-eval": 2,
+        "no-multi-spaces": 1,
         "no-undef-init": 2,
-        "no-unused-vars": 2,
         "no-use-before-define": 2,
-        "no-console": 0
+        "no-process-exit": 2,
+        "array-bracket-spacing": [1, "never"],
+        "block-spacing": [1, "always"],
+        "brace-style": 1,
+        "camelcase": 1,
+        "comma-spacing": [2, {"before": false, "after": true}],
+        "computed-property-spacing": [2, "never"],
+        "indent": 2,
+        "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
+        "max-len": [2, 120, 4, {"ignoreComments": true, "ignoreUrls": true}],
+        "no-array-constructor": 2,
+        "no-multiple-empty-lines": 1,
+        "no-trailing-spaces": 1,
+        "semi": [2, "always"],
+        "spaced-comment": [1, "always"],
+        "no-const-assign": 2,
+        "no-var": 2,
+        "prefer-template": 1
     }
 }
